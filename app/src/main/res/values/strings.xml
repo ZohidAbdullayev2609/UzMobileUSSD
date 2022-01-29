@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">UzMobileUSSD</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Fourth fragment</string>
+    <string name="operator">Milliy operator</string>
+
+    <string name="kunlik">Kunlik</string>
+    <string name="haftalik">Haftalik</string>
+    <string name="oylik">Oylik</string>
+    <string name="paket">Internet paketlar</string>
+    <string name="sms">SMS paketlar</string>
+    <string name="tarif">Tariflar</string>
+    <string name="kodlar">USSD kodlar</string>
+    <string name="xizmatlar">Xizmatlar</string>
+    <string name="tarifni_tekshirish">Tarifni tekshirish</string>
+</resources>

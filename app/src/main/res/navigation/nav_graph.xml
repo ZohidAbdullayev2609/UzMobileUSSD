@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.example.uzmobileussd.ui.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_first" />
+
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.uzmobileussd.ui.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" />
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.example.uzmobileussd.ui.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_third" >
+        <action
+            android:id="@+id/action_firstFragment_to_prostaOnFragment2"
+            app:destination="@id/prostaOnFragment2" />
+        <action
+            android:id="@+id/action_firstFragment_to_homeInternetFragment"
+            app:destination="@id/homeInternetFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_homeSmsFragment"
+            app:destination="@id/homeSmsFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_tariflarFragment"
+            app:destination="@id/tariflarFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_xizmatlarFragment"
+            app:destination="@id/xizmatlarFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_USSDFragment2"
+            app:destination="@id/USSDFragment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fourthFragment"
+        android:name="com.example.uzmobileussd.ui.FourthFragment"
+        android:label="fragment_fourth"
+        tools:layout="@layout/fragment_fourth" />
+
+    <fragment
+        android:id="@+id/fifthFragment"
+        android:name="com.example.uzmobileussd.ui.FifthFragment"
+        android:label="fragment_fifth"
+        tools:layout="@layout/fragment_fifth" />
+
+    <fragment
+        android:id="@+id/prostaOnFragment2"
+        android:name="com.example.uzmobileussd.ui.ProstaOnFragment"
+        android:label="fragment_prosta_on"
+        tools:layout="@layout/fragment_prosta_on" >
+        <action
+            android:id="@+id/action_prostaOnFragment2_to_firstFragment"
+            app:destination="@id/firstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeInternetFragment"
+        android:name="com.example.uzmobileussd.HomeInternetFragment"
+        android:label="fragment_home_internet"
+        tools:layout="@layout/fragment_home_internet" />
+    <fragment
+        android:id="@+id/homeSmsFragment"
+        android:name="com.example.uzmobileussd.HomeSmsFragment"
+        android:label="fragment_home_sms"
+        tools:layout="@layout/fragment_home_sms" />
+    <fragment
+        android:id="@+id/tariflarFragment"
+        android:name="com.example.uzmobileussd.tariflar.TariflarFragment"
+        android:label="fragment_tariflar"
+        tools:layout="@layout/fragment_tariflar" />
+    <fragment
+        android:id="@+id/xizmatlarFragment"
+        android:name="com.example.uzmobileussd.xizmat.XizmatlarFragment"
+        android:label="fragment_xizmatlar"
+        tools:layout="@layout/fragment_xizmatlar" />
+    <fragment
+        android:id="@+id/USSDFragment2"
+        android:name="com.example.uzmobileussd.ussd.USSDFragment"
+        android:label="fragment_u_s_s_d"
+        tools:layout="@layout/fragment_u_s_s_d" />
+</navigation>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+     <item android:id="@+id/firstFragment"
+        android:title="Balans"
+        app:showAsAction="always"
+        android:icon="@drawable/balans"/>
+
+     <item android:id="@+id/secondFragment"
+        android:title="Operator"
+        app:showAsAction="always"
+        android:icon="@drawable/operator"/>
+
+    <item android:id="@+id/thirdFragment"
+        android:title="Home"
+        app:showAsAction="always"
+        android:icon="@drawable/home"/>
+
+     <item android:id="@+id/fourthFragment"
+        android:title="Yangiliklar"
+        app:showAsAction="always"
+        android:icon="@drawable/yangiliklar"/>
+
+     <item android:id="@+id/fifthFragment"
+        android:title="Sozlamalar"
+        app:showAsAction="always"
+        android:icon="@drawable/settings"/>
+
+
+</menu>
